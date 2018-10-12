@@ -10,8 +10,18 @@ class Transfer
   end 
   
   def valid? 
-    
+    if @sender.valid? == true  && @receiver.valid? == true 
+      true 
+    else 
+      false 
   end 
   
+  def valid?
+    if status == "open" && balance > 0 
+      true 
+    else 
+      false 
+    end 
+  end 
   
 end
