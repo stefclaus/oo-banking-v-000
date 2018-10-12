@@ -19,7 +19,7 @@ class BankAccount
   
   def valid?
     if status = "open" && balance > 0 
-      valid
+      puts "valid"
     else 
       nil 
     end 
