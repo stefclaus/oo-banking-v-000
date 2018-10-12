@@ -19,9 +19,9 @@ class BankAccount
   
   def valid?
     if status = "open" && balance > 0 
-      puts "valid"
+      true 
     else 
-      nil 
+      false 
     end 
   end 
   
