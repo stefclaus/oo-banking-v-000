@@ -19,6 +19,7 @@ class Transfer
   
   def execute_transaction 
     @sender.
+    @receiver.deposit(amount)
     
     
   end   
