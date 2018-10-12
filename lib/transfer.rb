@@ -21,11 +21,8 @@ class Transfer
     @sender.pay(amount)
     @receiver.deposit(amount)
     
-    if @status == "pending"
-      @status = "complete"
-    else 
-      nil 
-    end 
+    @status ||= "pending"
+
   end   
   
 end
