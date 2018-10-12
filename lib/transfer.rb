@@ -22,7 +22,9 @@ class Transfer
     @receiver.deposit(amount)
     
     @status = "complete"
-    if @status = "complete"
+    
+    if valid? == false || @status = "complete"
+      
       
   end   
   
