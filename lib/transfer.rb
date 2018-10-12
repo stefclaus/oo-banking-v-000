@@ -20,7 +20,11 @@ class Transfer
   def execute_transaction 
     @sender.pay(amount)
     @receiver.deposit(amount)
-    @status = "complete"
+    
+    if @status == "pending"
+      @status = "complete"
+    else 
+      nil 
   end   
   
 end
