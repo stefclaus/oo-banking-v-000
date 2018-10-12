@@ -18,14 +18,13 @@ class Transfer
   end 
   
   def execute_transaction 
-    @sender.pay(amount)
-    @receiver.deposit(amount)
-    
-    @status = "complete"
-    
-    if valid? == false || @status = "complete"
-      
-      
+   
+    if valid? == false || @status == "complete"
+      nil 
+    else 
+      @sender.pay(amount)
+      @receiver.deposit(amount)
+      @status = "complete"
   end   
   
 end
