@@ -14,6 +14,7 @@ class Transfer
       true 
     else 
       false 
+    end 
   end 
   
   def valid?
