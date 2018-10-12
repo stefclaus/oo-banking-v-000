@@ -19,7 +19,9 @@ class Transfer
   
   def execute_transaction 
    
-    if @sender.valid? == false || @status == "complete"
+    if @sender.valid? == false 
+    
+    elsif @status == "complete"
       nil 
     else 
       @sender.pay(amount)
