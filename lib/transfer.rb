@@ -25,6 +25,7 @@ class Transfer
       @status = "complete"
     else 
       nil 
+    end 
   end   
   
 end
