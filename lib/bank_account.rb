@@ -14,7 +14,7 @@ class BankAccount
   end 
   
    def pay(amount)
-    @balance += amount 
+    @balance -= amount 
   end 
 
   def display_balance 
